@@ -13,6 +13,9 @@
 		B9BDC45326AC012000B6E05C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9BDC45226AC012000B6E05C /* Preview Assets.xcassets */; };
 		B9BDC45526AC012000B6E05C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BDC45426AC012000B6E05C /* Persistence.swift */; };
 		B9BDC45826AC012000B6E05C /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9BDC45626AC012000B6E05C /* Devote.xcdatamodeld */; };
+		B9BDC46926AC03C100B6E05C /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9BDC46626AC03C100B6E05C /* sound-ding.mp3 */; };
+		B9BDC46A26AC03C100B6E05C /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9BDC46726AC03C100B6E05C /* sound-rise.mp3 */; };
+		B9BDC46B26AC03C100B6E05C /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9BDC46826AC03C100B6E05C /* sound-tap.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B9BDC45426AC012000B6E05C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B9BDC45726AC012000B6E05C /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
 		B9BDC45926AC012000B6E05C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9BDC46626AC03C100B6E05C /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		B9BDC46726AC03C100B6E05C /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		B9BDC46826AC03C100B6E05C /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,13 @@
 		B9BDC44A26AC011E00B6E05C /* Devote */ = {
 			isa = PBXGroup;
 			children = (
+				B9BDC46C26AC04A700B6E05C /* Style */,
+				B9BDC46326AC02ED00B6E05C /* Sound */,
+				B9BDC46226AC02E600B6E05C /* Utility */,
+				B9BDC46126AC02DB00B6E05C /* Extension */,
+				B9BDC46026AC02C900B6E05C /* Model */,
+				B9BDC45F26AC02BE00B6E05C /* View */,
 				B9BDC44B26AC011E00B6E05C /* DevoteApp.swift */,
-				B9BDC44D26AC011E00B6E05C /* ContentView.swift */,
 				B9BDC44F26AC012000B6E05C /* Assets.xcassets */,
 				B9BDC45426AC012000B6E05C /* Persistence.swift */,
 				B9BDC45926AC012000B6E05C /* Info.plist */,
@@ -73,6 +84,52 @@
 				B9BDC45226AC012000B6E05C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B9BDC45F26AC02BE00B6E05C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9BDC44D26AC011E00B6E05C /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9BDC46026AC02C900B6E05C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9BDC46126AC02DB00B6E05C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B9BDC46226AC02E600B6E05C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B9BDC46326AC02ED00B6E05C /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				B9BDC46626AC03C100B6E05C /* sound-ding.mp3 */,
+				B9BDC46726AC03C100B6E05C /* sound-rise.mp3 */,
+				B9BDC46826AC03C100B6E05C /* sound-tap.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		B9BDC46C26AC04A700B6E05C /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9BDC45326AC012000B6E05C /* Preview Assets.xcassets in Resources */,
+				B9BDC46A26AC03C100B6E05C /* sound-rise.mp3 in Resources */,
 				B9BDC45026AC012000B6E05C /* Assets.xcassets in Resources */,
+				B9BDC46B26AC03C100B6E05C /* sound-tap.mp3 in Resources */,
+				B9BDC46926AC03C100B6E05C /* sound-ding.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
